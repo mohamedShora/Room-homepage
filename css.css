@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    font-weight: 600;
+    font-family:spartan ;
+    
+}
+ul{
+    position: absolute;
+    top: 5%;
+    left: 8.5%;
+    z-index: 3;
+    
+}
+
+
+.room{
+    z-index: 4;
+    position: absolute;
+    top: 6.3%;
+    left:5%;
+    color:hsl(0, 0%, 100%); ;
+    padding-right: 30px;
+   
+}
+
+li{
+    display: inline-block;
+    color:hsl(0, 0%, 100%);
+    padding-left: 50px;
+    padding: 1em;
+}
+ul li a{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 6px;
+    text-decoration: none;
+    
+}
+a:hover{
+    border-bottom:solid 2px hsl(0, 0%, 100%) ;
+}
+.main1{
+    display: flex;
+   flex-wrap: wrap;
+   
+     
+}
+.cointer{
+    width: 35%;
+}
+
+.part1{
+    order: 0;
+max-width:100% ;
+display: block;
+}
+.part2{
+    order: 1;
+    margin-left:15%;
+    margin-top: 30%;
+    
+}
+.part2 h1{
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 30px;
+    
+}
+.part2 p{
+    color: hsl(0, 0%, 63%);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.part2 .p2{
+    letter-spacing: 6px;
+    position: absolute;
+    color:black
+}
+.show:hover{
+    opacity: 50%;
+}
+.show{
+    position: relative;
+    margin-bottom: 60px;
+}
+.part2 img{
+    position: absolute;
+    width: 30px;
+    left: 130px;
+    top: 3px;
+    
+}
+.images{
+    position: relative;
+}
+.angles{
+    position: absolute;
+    display: flex;
+    bottom:-4px;
+    right:-17.6%;
+
+}
+.left,.right{
+   
+    background-color: black;
+    padding: 20px 30px 20px 30px;
+}
+
+
+.left:hover{
+    opacity: 63%;
+}
+.right:hover{
+    opacity: 63%;}
+ 
+ .angles a{
+    border: 0;
+}
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.cointer1{
+    order:1;
+    width: 30%;
+}
+.cointer2{
+    order: 2;
+    width: 40%;
+    
+}
+.cointer4{
+    margin: 40px;
+    margin-top: 50px;
+}
+.cointer2 h2{
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 27%);
+}
+.cointer2 p{
+    line-height: 1.5;
+    color: hsl(0, 0%, 63%);;
+}
+.cointer3{
+    order: 3;
+    width: 30%;
+}
+
+.hamb{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 35px;
+    height: 20px;
+    padding: .8em;
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    width: 20px;
+    height: 20px;
+    padding: 1em; 
+    z-index: 5;
+    display: none;
+    
+}
+
+.active{
+    transform: translate(0,0);
+}
+
+@media screen and (max-width:500px){
+    .hamb{
+        display: block;
+    }
+    ul{
+       left: 0;
+        right:0px;
+        top: 0;
+        background-color: white;
+        transform: translate(-100%,0);
+        transition: 0.3s ease;
+        padding-left:20%;
+    }
+    ul li a{
+        
+        color: black;
+
+    }
+    .angles{
+        bottom:-4.1px;
+        right: 0;
+    }
+    .right,.left{
+        padding: 14px 19px 14px 19px;
+        
+    }
+    .room{
+        left: 45%;
+        
+        top: 5%;
+    }
+    
+    .close{
+        top: 0;
+        left:0;
+        padding: .8em;
+    }
+.cointer{
+    width: 100%;
+    
+}
+.part2{
+    margin: 2em;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+.part2 h1{
+    font-size: 25px;
+    
+}
+.part2 p{
+    margin-bottom: 50px;
+}
+.show{
+    padding-bottom: 30px;
+}
+.cointer1,.cointer2,.cointer3{
+    width: 100%;
+}
+}
+/* @media screen and (max-width:840px){
+    .angles{
+        bottom: -10px;
+        right: 0px;
+    }
+    .cointer{
+        width: 100%;
+    }
+    .cointer1,.cointer2,.cointer3{
+        width: 100%;
+    }
+} */
